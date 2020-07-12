@@ -1,8 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Typography, ThemeProvider } from '@srvycool/ds';
+
+import 'typeface-hammersmith-one';
+import 'typeface-montserrat';
+
+const App: React.FC = () => {
+  return (
+    <ThemeProvider>
+      <Typography variant="heading1">Hallo</Typography>
+      <Typography variant="heading1">Hallo</Typography>
+      <Typography variant="heading1">Hallo</Typography>
+      <Typography variant="heading1">Hallo</Typography>
+    </ThemeProvider>
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>
