@@ -1,5 +1,5 @@
 import 'styled-components';
-import { Theme } from '@srvycool/ds/dist/theme';
+import { Theme } from '@srvycool/ds';
 
 declare module 'styled-components' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface

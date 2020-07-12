@@ -1340,10 +1340,10 @@
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.3.tgz#5405ee8e444ed212db44e79351f0c70a582aae25"
   integrity sha512-DetpxZw1fzPD5xUBrIAoplLChO2VB8DlL5Gg+I1IR9b2wPqYIca2WSUxL5g1vLeR4MsQq1NeWriXAVffV+U1Fw==
 
-"@srvycool/ds@^1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@srvycool/ds/-/ds-1.10.0.tgz#d2f589add87b99e7af9a9b9e644f592edeb95780"
-  integrity sha512-L3JQn2az5TZpxdYRzK6qqGZ2OUpgYe2P2u7dFbQCqndsufz3lQF8HAcwYuXQmCf51fDLTocH8+o1wEy3t4yVSw==
+"@srvycool/ds@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@srvycool/ds/-/ds-1.11.0.tgz#6de6c2bf231119ee1d140bee02cee2a69b27561b"
+  integrity sha512-yZ5GCmTS5VELKoU6fWJlhXWIfCgs5g0rhM/ktWQP1hJkHkeBNxU7N45YzR4+fUmgMYEEDJ0mjCV4/0eATjBHYA==
 
 "@styled-system/background@^5.1.2":
   version "5.1.2"

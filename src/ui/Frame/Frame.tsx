@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Box, Logo } from '@srvycool/ds';
+import { Box, Logo, LogoSymbol } from '@srvycool/ds';
 
 const StyledLogo = styled(Logo)`
   height: 36px;
@@ -13,7 +13,7 @@ const StyledHeader = styled(Box)`
 export const Frame: React.FC = ({ children }) => {
   return (
     <Box display="flex" flexDirection="row">
-      <Box width={['100%', '50%']} height="100vh">
+      <Box width={['100%', '100%', '50%']} height="100vh">
         <StyledHeader
           padding="l"
           display="flex"
@@ -25,11 +25,18 @@ export const Frame: React.FC = ({ children }) => {
         <Box>{children}</Box>
       </Box>
       <Box
-        display={['none', 'block']}
+        display={['none', 'none', 'flex']}
         width="50%"
         height="100vh"
         backgroundColor="grey100"
-      />
+        justifyContent="center"
+        alignItems="center"
+        padding="xl"
+      >
+        <Box maxWidth="300px" width="100%">
+          <LogoSymbol fill="grey200" />
+        </Box>
+      </Box>
     </Box>
   );
 };
