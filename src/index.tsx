@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import { Typography, ThemeProvider } from '@srvycool/ds';
+import { ThemeProvider } from '@srvycool/ds';
+import { Frame } from './ui/Frame/Frame';
 
 import 'typeface-hammersmith-one';
 import 'typeface-montserrat';
+import './index.css';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <Typography variant="heading1">Hallo</Typography>
-      <Typography variant="heading1">Hallo</Typography>
-      <Typography variant="heading1">Hallo</Typography>
-      <Typography variant="heading1">Hallo</Typography>
+      <Frame />
     </ThemeProvider>
   );
 };
