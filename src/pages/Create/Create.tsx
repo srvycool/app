@@ -1,25 +1,10 @@
 import React from 'react';
-import {
-  Box,
-  Logo,
-  Typography,
-  Textarea,
-  RadioButton,
-  Input,
-  Button,
-} from '@srvycool/ds';
+import { Frame } from '../../shared/ui/Frame/Frame';
+import { Typography, Textarea, RadioButton, Input, Button } from '@srvycool/ds';
 
-export const Frame: React.FC = () => {
+export const Create: React.FC = () => {
   return (
-    <Box
-      paddingTop={['m', 'm', 'xl']}
-      paddingX={['m', 'm', 'xxl']}
-      marginBottom="xl"
-      maxWidth="720px"
-    >
-      <Box marginBottom="xl">
-        <Logo />
-      </Box>
+    <Frame>
       <Typography variant="heading1" color="grey900" marginBottom="m">
         What's your question?
       </Typography>
@@ -58,6 +43,6 @@ export const Frame: React.FC = () => {
       <Input label="Answer 3" marginBottom="m" />
       <Input label="Answer 4" marginBottom="xl" />
       <Button>Create</Button>
-    </Box>
+    </Frame>
   );
 };
