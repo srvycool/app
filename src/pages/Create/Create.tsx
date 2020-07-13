@@ -5,11 +5,11 @@ import { Typography, Textarea, RadioButton, Input, Button } from '@srvycool/ds';
 export const Create: React.FC = () => {
   return (
     <Frame>
-      <Typography variant="heading1" color="grey900" marginBottom="m">
+      <Typography as="h2" variant="heading1" color="grey900" marginBottom="m">
         What's your question?
       </Typography>
       <Textarea marginBottom="xl"></Textarea>
-      <Typography variant="heading1" color="grey900" marginBottom="m">
+      <Typography as="h2" variant="heading1" color="grey900" marginBottom="m">
         How do you want to receive answers?
       </Typography>
       <RadioButton
@@ -27,7 +27,7 @@ export const Create: React.FC = () => {
         marginBottom="xl"
         onChange={() => null}
       />
-      <Typography variant="heading1" color="grey900" marginBottom="xs">
+      <Typography as="h2" variant="heading1" color="grey900" marginBottom="xs">
         Multiple Choice
       </Typography>
       <Typography
