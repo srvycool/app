@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as serviceWorker from './serviceWorker';
 import { ThemeProvider } from '@srvycool/ds';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import * as serviceWorker from './serviceWorker';
 import { Create } from './pages/Create/Create';
 
 import 'typeface-hammersmith-one';
@@ -14,9 +14,7 @@ ReactDOM.render(
     <ThemeProvider>
       <BrowserRouter>
         <Switch>
-          <Route path="/create">
-            <Create />
-          </Route>
+          <Route path="/create" component={Create} />
           <Redirect to="/create" />
         </Switch>
       </BrowserRouter>
