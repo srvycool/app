@@ -2,23 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { ThemeProvider } from '@srvycool/ds';
-import { Frame } from './ui/Frame/Frame';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { Create } from './pages/Create/Create';
 
 import 'typeface-hammersmith-one';
 import 'typeface-montserrat';
 import './index.css';
 
-const App: React.FC = () => {
-  return (
-    <ThemeProvider>
-      <Frame />
-    </ThemeProvider>
-  );
-};
-
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/create">
+            <Create />
+          </Route>
+          <Redirect to="/create" />
+        </Switch>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
