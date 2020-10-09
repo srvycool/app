@@ -1,0 +1,5 @@
+mutation MultipleChoiceCreate($question: String!, $answers: [String!]!) {
+  surveyMultipleChoiceCreate(question: $question, answers: $answers) {
+    id
+  }
+}
