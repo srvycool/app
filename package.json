@@ -22,6 +22,8 @@
   },
   "scripts": {
     "prestart": "yarn graphql",
+    "prebuild": "yarn graphql",
+    "pretest": "yarn graphql",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
