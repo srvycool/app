@@ -1,8 +1,16 @@
 import React from 'react';
 import { Frame } from '../../shared/ui/Frame/Frame';
 import { Typography, Textarea, RadioButton, Input, Button } from '@srvycool/ds';
+import { useMultipleChoiceCreateMutation } from '../../generated/graphql';
 
 export const Create: React.FC = () => {
+  const [submit] = useMultipleChoiceCreateMutation({
+    variables: {
+      question: 'How are you?',
+      answers: ['Awesome', 'Great', 'Good'],
+    },
+  });
+
   return (
     <Frame>
       <Typography as="h2" variant="heading1" color="grey900" marginBottom="m">
@@ -42,7 +50,7 @@ export const Create: React.FC = () => {
       <Input label="Answer 2" marginBottom="m" />
       <Input label="Answer 3" marginBottom="m" />
       <Input label="Answer 4" marginBottom="xl" />
-      <Button>Create</Button>
+      <Button onClick={() => submit()}>Create</Button>
     </Frame>
   );
 };
