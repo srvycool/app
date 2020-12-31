@@ -60,7 +60,7 @@
     "@graphql-codegen/typescript-operations": "^1.17.13",
     "@graphql-codegen/typescript-react-apollo": "^2.2.1",
     "@types/react-dom": "^16.9.10",
-    "@types/react-router-dom": "^5.1.6",
+    "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.7",
     "@types/styled-system": "^5.1.10",
     "eslint-config-prettier": "^7.1.0",
